@@ -1,0 +1,24 @@
+trainer: mtenergy
+
+dataset:
+  - src: data/is2re/doping/combined/train_newtags0/data.lmdb
+#   - src: dataset/is2res_train_val_test_lmdbs/10k/train/data.lmdb 
+    normalize_labels: False
+    target_mean: -1.525913953781128
+    target_std: 2.279365062713623
+  - src: data/is2re/doping/combined/val_newtags0/data.lmdb
+  - src: data/is2re/doping/combined/test_newtags0/data.lmdb
+
+logger: tensorboard
+mdn: True
+alpha: 1
+
+task:
+  dataset: single_point_lmdb
+  description: "Relaxed state energy prediction from initial structure."
+  type: regression
+  metric: mae
+  labels:
+    - relaxed energy
+  project_name: dimenetpluspluscsmd-mdnTrue-newtags
+  run_name: baseline
