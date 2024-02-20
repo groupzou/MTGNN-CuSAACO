@@ -95,7 +95,7 @@ After running the code, dataset will be generated and saved in the following dir
                         - data.lmdb
                         - data.lmdb-lock
                 - split_idx_for_csv{name}.npz
-                - train{name}_norm.npz (when requiring normalization information output)
+                - train{name}_norm.npz (when normalization information output is needed)
 ```
 The ```outcar_content.txt``` and ```pos-contcar_content.txt``` save coordinates information derived from source data. ```init_data_list(-pos).pt``` and ```relax_data_list(-cont).pt``` save graph datasets with the same features defined in ```ocp```, in which ```pos``` of each atom is unrelaxed and relaxed one, respectively. The files are needed for generating .lmdb datasets saved in ```{task}``` directory, and they will not be generated again (and directly used for generation) if they are detected to be located in ```{lmdb_dir}``` directory.
 
