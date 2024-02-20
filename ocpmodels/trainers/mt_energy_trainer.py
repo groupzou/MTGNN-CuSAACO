@@ -1,4 +1,5 @@
 """
+
 This code is based on the energy trainer implementation from ocp:
 https://github.com/Open-Catalyst-Project/ocp/blob/main/ocpmodels/trainers/energy_trainer.py
 
@@ -8,6 +9,7 @@ Copyright (c) Facebook, Inc. and its affiliates.
 
 This source code is licensed under the MIT license found in the
 LICENSE file in the root directory of this source tree.
+
 """
 
 import logging
