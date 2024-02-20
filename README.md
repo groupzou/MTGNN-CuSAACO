@@ -49,7 +49,9 @@ Sample .yml files are provided in ```configs``` directory of this project. Choos
 
 ## Dataset generation
 
-```struct2dataset.py``` is provided for users to generate custom datasets based on VASP output files for the package, which is also applicable for other models in the ```ocp``` environment. Node-, edge- and graph-level features in the generated graph data are introduced in the [ocp tutorial](https://github.com/Open-Catalyst-Project/ocp/blob/main/tutorials/data_preprocessing.ipynb). 
+```struct2dataset.py``` is provided for users to generate custom datasets based on VASP output files for the package, which is also applicable for other models in the ```ocp``` environment. Node-, edge- and graph-level features in the generated graph data are introduced in the [ocp tutorial](https://github.com/Open-Catalyst-Project/ocp/blob/main/tutorials/data_preprocessing.ipynb).
+
+Example datasets, which have been applied in articles ([1](https://arxiv.org/abs/2209.07300), [2](https://arxiv.org/abs/2303.02875)), are available in [this link](https://doi.org/10.5281/zenodo.10679574).
 
 To generate datasets, path of input source data should be arranged in the following structure:
 ```
