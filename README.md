@@ -105,6 +105,7 @@ The variable ```{task}``` indicates types of the dataset, with possible values a
 
 The variable ```{name}``` differentiates datasets generated with different random seeds, VASP source data. Besides, the scripts also provides a function to judge whether an atom is fixed based on the CONTCAR file of the material, the information of which is saved in ```data.fixed``` (implemented in ```get_top_from_contcar```). If not, an atom is regarded as fixed if the z-axis of the coordinate of the atom is smaller than 2/3 of the thickness of the substrate (highest z-coordinate - lowest z-coordinate, implemented in ```get_top_from_atoms```).
 - The implementation is based on CO-adsorbed surface materials. Therefore, C and O atoms are ignored when deciding the thickness. It is possible to modify the implementation for constructing other custom datasets.
+
 Possible values of ```{name}``` are listed as follows:
 ```
 {name} == {seed} when datasets are generated based on outcar files 
