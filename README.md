@@ -4,7 +4,7 @@ MTGNN is a graph neural network framework for predicting chemical and physical p
 
 This project incorporates implementation of MT DimeNet++ architecture (including MT-MD DimeNet++ and MT-MLP DimeNet++), a trainer script to train the model, and a dataset generation script, in which a method of constructing .lmdb datasets based on [VASP](https://www.vasp.at/) output files (OUTCARs, or POSCARs + CONTCARs) is provided.
 
-Addtionally, dopant information-modified GNN models illustrated in the Dicussion section of the [arXiv](https://arxiv.org/abs/2209.07300) article have also attached.
+Addtionally, dopant information-modified GNN models illustrated in the Dicussion section of the [arXiv](https://arxiv.org/abs/2209.07300) article have also been attached.
 
 The project is implemented based on [open catalyst project](https://github.com/Open-Catalyst-Project/ocp).
 
