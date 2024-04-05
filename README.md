@@ -2,7 +2,9 @@
 
 MTGNN is a graph neural network framework for predicting chemical and physical properties of materials with relaxed structures, with their unrelaxed structure counterparts as input. An [arXiv](https://arxiv.org/abs/2209.07300) article has been published to illustrate architectures of the models and their performances in predicting Cu-based single-atom alloys (SAAs) catalysts for the CO2 reduction reaction (CO2RR), and ```IS2RE``` task in ```open catalyst project (ocp)```.
 
-This project incorporates implementation of MT DimeNet++ architecture (including MT-MD DimeNet++ and MT-MLP DimeNet++), a trainer script to train the model, and a dataset generation script, in which a method of constructing .lmdb datasets based on [VASP](https://www.vasp.at/) output files (OUTCARs, or POSCARs + CONTCARs) is provided. 
+This project incorporates implementation of MT DimeNet++ architecture (including MT-MD DimeNet++ and MT-MLP DimeNet++), a trainer script to train the model, and a dataset generation script, in which a method of constructing .lmdb datasets based on [VASP](https://www.vasp.at/) output files (OUTCARs, or POSCARs + CONTCARs) is provided.
+
+Addtionally, dopant information-modified GNN models illustrated in the Dicussion section of the [arXiv](https://arxiv.org/abs/2209.07300) article have also attached.
 
 The project is implemented based on [open catalyst project](https://github.com/Open-Catalyst-Project/ocp).
 
